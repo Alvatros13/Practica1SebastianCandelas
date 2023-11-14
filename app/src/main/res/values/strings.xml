@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Practica1SebastianCandelas</string>
+    <string name="Title_Main">Tienda Warhammer 40K</string>
+    <string name="Marines">Marines Espaciales</string>
+    <string name="Xenos">Xenos</string>
+    <string name="Choose">¡Elige tú Facción!</string>
+    <string name="MainText">En el 41.º Milenio, las facciones en liza de antiguas civilizaciones e imperios noveles se baten en batallas interminables a lo largo y ancho de la galaxia. La humanidad está aislada, asediada por todos lados por herejes, mutantes y alienígenas. No hay misericordia. No hay respiro. Prepárate para la batalla.</string>
+    <string name="Back">Atrás</string>
+    <string name="TitleXenos">LA AMENAZA DE LOS XENOS</string>
+    <string name="textXenos">Los xenos son las razas distintas de la humana y no ligadas al Caos. \n\n
+            Aunque una raza xeno puede componerse a su vez de varias subrazas, podemos agruparlas en los siguientes tipos básicos:\n\n
+        -Aeldari\n
+        -Tiránidos\n
+        -Orkos\n
+        -T’au\n
+        -Necrones\n</string>
+    <string name="TitleMarines">MARINES ESPACIALES</string>
+    <string name="textMarines">No hay teatro de guerra en el que los Marines Espaciales no destaquen, ningún enemigo al que no puedan vencer y ningún peligro al que teman enfrentarse. \n\n
+        Son las tropas de choque de élite del Imperium, cuyas campañas ultrarrápidas se llevan a cabo con una brutalidad tan espectacular que se les conoce como los Ángeles de la Muerte.</string>
+    <string name="Buy">Comprar</string>
+    <string name="titleReceipt">Recibo</string>
+    <string name="Pay">Pagar</string>
+    <string name="Descuento">Descuento para socios</string>
+
+    <string name="Condiciones">Acepto Condiciones</string>
+
+</resources>

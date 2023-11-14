@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Ventana3Recibo">
+
+    <TextView
+        android:id="@+id/textTitleRecibo"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:background="@color/design_default_color_primary"
+        android:gravity="center"
+        android:text="@string/titleReceipt"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/buttonPagar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:backgroundTint="@color/default_background"
+        android:insetTop="0dp"
+        android:insetBottom="0dp"
+        android:onClick="pagar"
+        android:text="@string/Pay"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewTpagar"
+        android:layout_width="267dp"
+        android:layout_height="46dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:text="TOTAL A PAGAR"
+        android:textColor="@color/default_background"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textTitleRecibo" />
+
+    <TextView
+        android:id="@+id/textProd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="40dp"
+        android:text="Producto:"
+        android:textSize="20sp"
+        android:textStyle="italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTpagar" />
+
+    <TextView
+        android:id="@+id/textPre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="40dp"
+        android:text="Precio:"
+        android:textSize="20sp"
+        android:textStyle="italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textProd" />
+
+    <TextView
+        android:id="@+id/textCant"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="40dp"
+        android:text="Cantidad:"
+        android:textSize="20sp"
+        android:textStyle="italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textPre" />
+
+    <TextView
+        android:id="@+id/textFech"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="40dp"
+        android:text="Fecha:"
+        android:textSize="20sp"
+        android:textStyle="italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textCant" />
+
+    <TextView
+        android:id="@+id/textDes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="40dp"
+        android:text="Descuento:"
+        android:textSize="20sp"
+        android:textStyle="italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textFech" />
+
+    <TextView
+        android:id="@+id/textTot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginBottom="144dp"
+        android:text="Total:"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/buttonPagar"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <CheckBox
+        android:id="@+id/checkBoxCondiciones"
+        android:layout_width="211dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginBottom="48dp"
+        android:text="@string/Condiciones"
+        app:layout_constraintBottom_toTopOf="@+id/buttonPagar"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textProducto"
+        android:layout_width="192dp"
+        android:layout_height="27dp"
+        android:layout_marginTop="40dp"
+        android:text="producto"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.807"
+        app:layout_constraintStart_toEndOf="@+id/textProd"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTpagar" />
+
+    <TextView
+        android:id="@+id/textPrecio"
+        android:layout_width="192dp"
+        android:layout_height="27dp"
+        android:layout_marginTop="40dp"
+        android:text="110.00€"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.85"
+        app:layout_constraintStart_toEndOf="@+id/textPre"
+        app:layout_constraintTop_toBottomOf="@+id/textProducto" />
+
+    <TextView
+        android:id="@+id/textCantidad"
+        android:layout_width="192dp"
+        android:layout_height="27dp"
+        android:layout_marginTop="40dp"
+        android:text="1"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.813"
+        app:layout_constraintStart_toEndOf="@+id/textCant"
+        app:layout_constraintTop_toBottomOf="@+id/textPrecio" />
+
+    <TextView
+        android:id="@+id/textFecha"
+        android:layout_width="192dp"
+        android:layout_height="27dp"
+        android:layout_marginTop="40dp"
+        android:text="sysDate"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.855"
+        app:layout_constraintStart_toEndOf="@+id/textFech"
+        app:layout_constraintTop_toBottomOf="@+id/textCantidad" />
+
+    <TextView
+        android:id="@+id/textDescuento"
+        android:layout_width="192dp"
+        android:layout_height="27dp"
+        android:layout_marginTop="40dp"
+        android:text="descuento"
+        android:textColor="@color/fastlane_background"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.774"
+        app:layout_constraintStart_toEndOf="@+id/textDes"
+        app:layout_constraintTop_toBottomOf="@+id/textFecha" />
+
+    <TextView
+        android:id="@+id/textResult"
+        android:layout_width="220dp"
+        android:layout_height="42dp"
+        android:gravity="center"
+        android:text="result"
+        android:textColor="@color/black"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/checkBoxCondiciones"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.78"
+        app:layout_constraintStart_toEndOf="@+id/textTot"
+        app:layout_constraintTop_toBottomOf="@+id/textDescuento"
+        app:layout_constraintVertical_bias="0.511" />
+</androidx.constraintlayout.widget.ConstraintLayout>

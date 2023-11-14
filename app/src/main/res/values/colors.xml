@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="fastlane_background">#0096a6</color>
+    <color name="search_opaque">#ffaa3f</color>
+    <color name="selected_background">#ffaa3f</color>
+    <color name="default_background">#3d3d3d</color>
+    <color name="darkViolet">#342335</color>
+    <color name="marine">#0D288F</color>
+    <color name="xeno">#56205C</color>
+    <color name="background_gradient_end">#DDDDDD</color>
+
+</resources>

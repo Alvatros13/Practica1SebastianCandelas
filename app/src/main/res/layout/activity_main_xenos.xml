@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/xenos"
+    tools:context=".Ventana2Xenos">
+
+    <TextView
+        android:id="@+id/txtTitleXenos"
+        android:layout_width="0dp"
+        android:layout_height="56dp"
+        android:background="@color/darkViolet"
+        android:gravity="center"
+        android:text="@string/TitleXenos"
+        android:textColor="@color/background_gradient_end"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.8"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/imageButtonBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="2dp"
+        android:contentDescription="@string/Back"
+        android:onClick="volver"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/ic_menu_revert" />
+
+    <TextView
+        android:id="@+id/textXenos"
+        android:layout_width="371dp"
+        android:layout_height="233dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="5dp"
+        android:text="@string/textXenos"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtTitleXenos"
+        tools:ignore="TextSizeCheck" />
+
+    <Button
+        android:id="@+id/buttonComprarXenos"
+        android:layout_width="0dp"
+        android:layout_height="54dp"
+        android:backgroundTint="@color/default_background"
+        android:insetBottom="0dp"
+        android:onClick="comprarXenos"
+        android:text="@string/Buy"
+        app:cornerRadius="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Spinner
+        android:id="@+id/spinnerXenos"
+        android:layout_width="405dp"
+        android:layout_height="64dp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonComprarXenos"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textXenos"
+        app:layout_constraintVertical_bias="0.111" />
+
+    <CheckBox
+        android:id="@+id/checkBoxXenos"
+        android:layout_width="372dp"
+        android:layout_height="48dp"
+        android:text="@string/Descuento"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/buttonComprarXenos"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.512"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerXenos"
+        app:layout_constraintVertical_bias="0.915" />
+</androidx.constraintlayout.widget.ConstraintLayout>

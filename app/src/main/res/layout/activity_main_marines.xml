@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/marines"
+    tools:context=".Ventana2Marines">
+
+    <TextView
+        android:id="@+id/txtTitleMarines"
+        android:layout_width="0dp"
+        android:layout_height="56dp"
+        android:background="@color/marine"
+        android:gravity="center"
+        android:text="@string/TitleMarines"
+        android:textColor="@color/background_gradient_end"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.8"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/imageButtonBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="2dp"
+        android:contentDescription="@string/Back"
+        android:onClick="volver"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:drawable/ic_menu_revert" />
+
+    <TextView
+        android:id="@+id/textMarines"
+        android:layout_width="375dp"
+        android:layout_height="212dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="5dp"
+        android:gravity="center|top|left"
+        android:text="@string/textMarines"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.481"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtTitleMarines"
+        tools:ignore="TextSizeCheck" />
+
+    <Button
+        android:id="@+id/buttonComprarMarines"
+        android:layout_width="0dp"
+        android:layout_height="54dp"
+        android:backgroundTint="@color/default_background"
+        android:insetBottom="0dp"
+        android:onClick="comprarMarines"
+        android:text="@string/Buy"
+        app:cornerRadius="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Spinner
+        android:id="@+id/spinnerMarines"
+        android:layout_width="405dp"
+        android:layout_height="68dp"
+        android:layout_marginTop="288dp"
+        android:backgroundTint="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.666"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtTitleMarines" />
+
+    <CheckBox
+        android:id="@+id/checkBoxMarines"
+        android:layout_width="369dp"
+        android:layout_height="59dp"
+        android:text="@string/Descuento"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/buttonComprarMarines"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.428"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerMarines"
+        app:layout_constraintVertical_bias="0.922" />
+</androidx.constraintlayout.widget.ConstraintLayout>
